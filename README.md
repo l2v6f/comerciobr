@@ -21,7 +21,7 @@ com o seguinte comando:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("NIEscaec/comerciobr")
+devtools::install_github("NIEscaec/comerciobr2")
 ```
 
 ## Exemplo
