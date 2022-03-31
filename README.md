@@ -29,10 +29,10 @@ devtools::install_github("NIEscaec/comerciobr2")
 Comércio em SH4
 
 ``` r
-library(comerciobr)
+library(comerciobr2)
 library(magrittr)
 
-comerciobr::sh4_df %>% 
+comerciobr2::sh4_df %>% 
   dplyr::filter(co_ano == max(co_ano)-1) %>% 
   dplyr::group_by(co_ano, path, no_pais) %>%
   dplyr::summarise(value = sum(value)) %>% 
@@ -58,7 +58,7 @@ comerciobr::sh4_df %>%
 Comércio por fator agregado
 
 ``` r
-comerciobr::fator_df %>%
+comerciobr2::fator_df %>%
   dplyr::filter(co_ano == max(co_ano)-1) %>%
   dplyr::group_by(co_fat_agreg, co_pais) %>%
   dplyr::summarise(value = sum(value)) %>%
